@@ -1,0 +1,3 @@
+limiter:
+  enabled: true
+  type: redis
