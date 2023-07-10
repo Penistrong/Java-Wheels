@@ -8,6 +8,6 @@
 
 ## 轮子列表
 
-1. 限流组件`limiter`, [博客-限流组件自定义开发]()
+1. 限流组件`limiter`, [博客-限流组件自定义开发](https://penistrong.github.io/jekyll/update/2023/07/10/Spring-%E9%99%90%E6%B5%81%E7%BB%84%E4%BB%B6%E8%87%AA%E5%AE%9A%E4%B9%89-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3+AOP/)
 
 2. 接口幂等性组件`idempotence`, [博客-接口幂等性组件自定义开发]()
