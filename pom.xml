@@ -10,10 +10,37 @@
     <packaging>pom</packaging>
     <modules>
         <module>limiter</module>
+        <module>idempotence</module>
+        <module>common</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <!-- Wheel Modules -->
+            <dependency>
+                <groupId>org.penistrong</groupId>
+                <artifactId>common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.penistrong</groupId>
+                <artifactId>common-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.penistrong</groupId>
+                <artifactId>limiter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.penistrong</groupId>
+                <artifactId>idempotence</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -42,6 +69,12 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-commons}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -75,6 +108,7 @@
         <spring-cloud.version>2022.0.0</spring-cloud.version>
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
         <guava.version>31.1-jre</guava.version>
+        <apache-commons>3.12.0</apache-commons>
         <!-- 默认必须引入的依赖版本 -->
         <lombok.version>1.18.26</lombok.version>
         <hutool.version>5.8.12</hutool.version>
