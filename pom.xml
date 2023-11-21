@@ -12,6 +12,7 @@
         <module>limiter</module>
         <module>idempotence</module>
         <module>common</module>
+        <module>mqtt</module>
     </modules>
 
     <dependencyManagement>
@@ -38,6 +39,12 @@
             <dependency>
                 <groupId>org.penistrong</groupId>
                 <artifactId>idempotence</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.penistrong</groupId>
+                <artifactId>mqtt</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
